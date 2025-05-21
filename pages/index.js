@@ -3,7 +3,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white flex flex-col items-center px-6 py-8 space-y-16">
       {/* Hero con fondo degradado oscuro */}
       <div className="w-full h-64 bg-gradient-to-r from-gray-800 via-gray-900 to-black flex flex-col justify-center items-center text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">Facundo Sanchez</h1>
+        <h1 className="text-4xl font-bold text-white mb-2">Facundo Morán</h1>
         <h2 className="text-xl text-gray-300">Estudiante de Ingeniería en Informática</h2>
       </div>
 
