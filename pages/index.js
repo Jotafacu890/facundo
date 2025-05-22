@@ -11,7 +11,9 @@ export default function Home() {
       <section className="max-w-3xl text-center space-y-4">
         <h3 className="text-2xl font-semibold">Sobre mí</h3>
         <p>
-          Soy estudiante de Ingeniería Informática, actualmente cursando el cuarto año de la carrera. Busco incorporarme al ámbito laboral para comenzar a aplicar mis conocimientos en un entorno profesional, aprender de personas con experiencia y continuar desarrollándome tanto a nivel técnico como personal. Me motiva el trabajo en equipo, el aprendizaje constante y la posibilidad de contribuir con soluciones reales mientras me preparo para los desafíos del futuro profesional.
+          Soy estudiante de Ingeniería Informática, actualmente cursando el cuarto año de la carrera. 
+        Busco incorporarme al ámbito laboral para comenzar a aplicar mis conocimientos en un entorno profesional, aprender de personas con experiencia y continuar desarrollándome tanto a nivel técnico como personal.
+        Me motiva el trabajo en equipo, el aprendizaje constante y la posibilidad de contribuir con soluciones reales mientras me preparo para los desafíos del futuro profesional.
 
 
         </p>
