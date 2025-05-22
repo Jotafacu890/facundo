@@ -47,11 +47,11 @@ export default function Home() {
           <h3 className="text-2xl font-semibold text-center">Bases de Datos</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-items-center bg-[var(--secondary)] dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-md">
             {[
-              { name: 'SQL Server', src: 'https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg' },
+              { name: 'SQL Server', src: "https://cdn-icons-png.flaticon.com/512/5968/5968364.png" },
               { name: 'MongoDB', src: 'https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png' },
-              { name: 'Cassandra', src: 'https://cdn.worldvectorlogo.com/logos/apache-cassandra-1.svg' },
-              { name: 'Redis', src: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Redis_Logo.svg' },
-              { name: 'Neo4j', src: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Neo4j_logo.svg' },
+              { name: 'Cassandra', src: "https://cdn.worldvectorlogo.com/logos/apache-cassandra-1.svg"},
+              { name: 'Redis', src: "https://cdn.worldvectorlogo.com/logos/redis-4.svg" },
+              { name: 'Neo4j', src: "https://cdn.worldvectorlogo.com/logos/neo4j-2.svg" },
             ].map(({ name, src }) => (
               <div key={name} className="flex flex-col items-center space-y-2">
                 <img src={src} alt={name} className="w-12 h-12 object-contain" />
