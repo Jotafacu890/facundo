@@ -66,7 +66,7 @@ export default function Home() {
       <section className="w-full max-w-3xl p-8 rounded-2xl shadow-lg bg-[var(--secondary)] dark:bg-[#1a1a1a]">
         <h3 className="text-2xl font-semibold text-center mb-6">Contáctame</h3>
         <form
-          action="https://formspree.io/f/mqaqqjpr?redirect=https://tusitio.vercel.app/gracias"
+          action="https://formspree.io/f/xgvkbyvq?redirect=https://tusitio.vercel.app/gracias"
           method="POST"
           className="space-y-4"
         >
