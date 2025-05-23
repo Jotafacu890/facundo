@@ -1,44 +1,53 @@
-/* styles/globals.css */
+@import "tailwindcss";
 
 :root {
-  --background: #fdf6ec;
-  --foreground: #3f3a33;
-  --secondary: #f4e8d4;
-  --primary: #d4a373;
-  --accent: #e9dbc6;
+  --background: #f5f5f5; /* gris claro */
+  --foreground: #111111; /* texto negro */
+  --accent: #2563eb;     /* azul sutil */
+  --background: #fdfaf6;
+  --foreground: #3e2c23;
+  --accent: #a9745a;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --border: #e0dcd5;
+  --background: #ffffff;      /* fondo blanco */
+  --foreground: #111111;      /* texto oscuro */
+  --accent: #2563eb;          /* azul */
+  --card: #f9f9f9;            /* tarjetas claras */
+  --border: #e0e0e0;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--background);
-  color: var(--foreground);
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-button {
-  cursor: pointer;
-}
-
-input, textarea {
-  outline: none;
-}
-
-::selection {
-  background: var(--primary);
-  color: white;
-}
-
+@media (prefers-color-scheme: light) {
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1e1b16;
-    --foreground: #f5f2ee;
-    --secondary: #2d261f;
-    --primary: #a77044;
-    --accent: #3a332c;
-  }
+:root {
+    --background: #0e0e0e;
+    --foreground: #f5f5f5;
+    --accent: #3b82f6;
+    --card: #1a1a1a;
+    --border: #333333;
+    --background: #1c1814;
+    --foreground: #fdfaf6;
+    --accent: #cba181;
+    --background: #1c1814;     /* fondo oscuro */
+    --foreground: #fdfaf6;     /* texto claro */
+    --accent: #cba181;         /* tono beige */
+--card: #2b2420;
+--border: #3a322d;
 }
+}
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn 1s ease-in-out both',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(-10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+};
