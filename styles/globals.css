@@ -1,103 +1,169 @@
-:root {
-  --background: #fdfaf6;
-  --foreground: #1a1a1a;
-  --primary: #be9b7b;
-  --secondary: #fffaf2;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facundo Morán - Portafolio</title>
+  <style>
+    :root {
+      --background: #fdfaf6;
+      --foreground: #1a1a1a;
+      --primary: #be9b7b;
+      --secondary: #fffaf2;
+    }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: var(--background);
-  color: var(--foreground);
-  padding: 40px 20px;
-}
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      padding: 40px 20px;
+    }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-section {
-  width: 100%;
-  background: var(--secondary);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
+    section {
+      width: 100%;
+      background: var(--secondary);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
 
-h1, h2, h3 {
-  text-align: center;
-}
+    h1, h2, h3 {
+      text-align: center;
+    }
 
-h1 {
-  font-size: 3rem;
-  background: linear-gradient(to right, var(--primary), #4a90e2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
-}
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, var(--primary), #4a90e2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
 
-.underline {
-  width: 60px;
-  height: 4px;
-  background: var(--primary);
-  margin: 0 auto 1rem;
-  border-radius: 2px;
-}
+    .underline {
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      margin: 0 auto 1rem;
+      border-radius: 2px;
+    }
 
-.about, .contact {
-  max-width: 700px;
-}
+    .about, .contact {
+      max-width: 700px;
+    }
 
-p {
-  line-height: 1.6;
-}
+    p {
+      line-height: 1.6;
+    }
 
-.grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  text-align: center;
-  padding-top: 1rem;
-}
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      text-align: center;
+      padding-top: 1rem;
+    }
 
-.grid img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
+    .grid img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
 
-.grid span {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
+    .grid span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
 
-form input, form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
 
-form button {
-  width: 100%;
-  padding: 0.75rem;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
+    form button {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-form button:hover {
-  background: #a88569;
-}
+    form button:hover {
+      background: #a88569;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Presentación -->
+    <section>
+      <h1>Facundo Morán</h1>
+      <div class="underline"></div>
+      <h2>Estudiante de Ingeniería en Informática</h2>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="about">
+      <h3>Sobre mí</h3>
+      <p>
+        Soy estudiante de Ingeniería Informática, actualmente cursando el cuarto año de la carrera. Busco incorporarme al ámbito laboral para aplicar mis conocimientos en un entorno profesional, aprender de personas con experiencia y desarrollarme a nivel técnico y personal. Me motiva el trabajo en equipo, el aprendizaje constante y contribuir con soluciones reales.
+      </p>
+    </section>
+
+    <!-- Tecnologías -->
+    <section>
+      <h3>Lenguajes y Frameworks</h3>
+      <div class="grid">
+        <div><img src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png" alt="Python"/><span>Python</span></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"/><span>Java</span></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"/><span>HTML</span></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"/><span>CSS</span></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"/><span>JavaScript</span></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"/><span>React</span></div>
+        <div><img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux"/><span>Redux</span></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring Boot"/><span>Spring Boot</span></div>
+        <div><img src="https://cdn.worldvectorlogo.com/logos/hibernate.svg" alt="Hibernate"/><span>Hibernate</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Bases de Datos</h3>
+      <div class="grid">
+        <div><img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="SQL Server"/><span>SQL Server</span></div>
+        <div><img src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MongoDB"/><span>MongoDB</span></div>
+        <div><img src="https://cdn.worldvectorlogo.com/logos/apache-cassandra-1.svg" alt="Cassandra"/><span>Cassandra</span></div>
+        <div><img src="https://cdn.worldvectorlogo.com/logos/redis-4.svg" alt="Redis"/><span>Redis</span></div>
+        <div><img src="https://cdn.worldvectorlogo.com/logos/neo4j-2.svg" alt="Neo4j"/><span>Neo4j</span></div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+      <h3>Contáctame</h3>
+      <form action="https://formspree.io/f/xgvkbyvq?redirect=https://tusitio.vercel.app/gracias" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
