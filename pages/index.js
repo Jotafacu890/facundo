@@ -2,12 +2,16 @@ export default function Home() {
   return (
     <main className="min-h-screen px-4 sm:px-10 py-10 flex flex-col gap-20 items-center bg-[var(--background)] text-[var(--foreground)]">
       {/* Presentación */}
-      <section className="w-full max-w-4xl text-center space-y-4">
-        <h1 className="text-5xl font-bold">Facundo Morán</h1>
-        <h2 className="text-lg text-gray-500 dark:text-gray-400">
-          Estudiante de Ingeniería en Informática
-        </h2>
-      </section>
+<section className="w-full max-w-4xl text-center space-y-4 py-8 border-b border-gray-300 dark:border-gray-600">
+  <h1 className="text-6xl font-extrabold bg-gradient-to-r from-[var(--primary)] to-blue-500 text-transparent bg-clip-text animate-fade-in">
+    Facundo Morán
+  </h1>
+  <div className="w-16 h-1 bg-[var(--primary)] mx-auto rounded-full" />
+  <h2 className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 font-medium tracking-wide animate-fade-in">
+    Estudiante de Ingeniería en Informática
+  </h2>
+</section>
+
 
       {/* Sobre mí */}
       <section className="w-full max-w-3xl p-8 rounded-2xl shadow-lg bg-[var(--secondary)] dark:bg-[#1a1a1a]">
