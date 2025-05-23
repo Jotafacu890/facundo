@@ -1,17 +1,26 @@
 :root {
-  --background: #ffffff;      /* fondo blanco */
-  --foreground: #111111;      /* texto oscuro */
-  --accent: #2563eb;          /* azul */
-  --card: #f9f9f9;            /* tarjetas claras */
+  --background: #ffffff;       /* fondo blanco */
+  --foreground: #111111;       /* texto negro */
+  --accent: #2563eb;           /* azul primario */
+  --primary: #2563eb;
+  --secondary: #f9f9f9;        /* tarjetas claras */
+  --card: #f9f9f9;
   --border: #e0e0e0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1c1814;     /* fondo oscuro */
-    --foreground: #fdfaf6;     /* texto claro */
-    --accent: #cba181;         /* tono beige */
+    --background: #1c1814;      /* fondo oscuro */
+    --foreground: #fdfaf6;      /* texto claro */
+    --accent: #cba181;          /* beige */
+    --primary: #cba181;
+    --secondary: #2b2420;
     --card: #2b2420;
     --border: #3a322d;
   }
+}
+
+/* Extra (opcional): transición suave entre temas */
+body {
+  transition: background-color 0.3s, color 0.3s;
 }
