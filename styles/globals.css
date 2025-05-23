@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-family: var(--fuente);
   background-color: #eaeaea;
   color: #222;
@@ -53,6 +53,7 @@ section {
   margin: auto;
   background-color: #dcdcdc;
   border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
 .languages-container {
@@ -76,14 +77,19 @@ section {
 }
 
 .language-item img {
-  height: 80px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
   display: block;
   margin: 0 auto 10px auto;
 }
 
-.contact-form {
-  max-width: 500px;
-  margin: auto;
+.contact-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #dcdcdc;
+  border-radius: 12px;
 }
 
 .contact-form input,
@@ -121,25 +127,6 @@ section {
   box-shadow: 0 6px 12px rgba(224, 102, 102, 0.6);
 }
 
-.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 1.2rem;
-}
-
-.social-links li a {
-  color: var(--azul);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-links li a:hover {
-  color: var(--rojo);
-}
-
 footer {
   background-color: var(--gris);
   color: #555;
@@ -147,5 +134,4 @@ footer {
   text-align: center;
   font-size: 0.85rem;
   font-style: italic;
-  margin-top: 2rem;
 }
